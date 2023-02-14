@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        
+        *{
+            list-style-type: none;
+        }
+       
+body{
+  display: flex;
+}
+   
+aside{
+  flex: 1;
+  
+}
+main{
+    flex:3;
+   
+}
+.whitebox{
+    background-color: rgb(167, 121, 212);
+    width: 1000px;
+    height: 250px;
+    border-radius:15px
+}
+.nav{
+    background-color: rgb(97, 214, 169);
+    width: 300px;
+}
+
+
+.mb-3{
+  width: 200px;
+}
+.marcin{
+
+  position: relative;
+margin-left: 1000px;
+
+}
+.marci{
+ position: absolute;
+ margin-left: -120px;
+}
+#a{
+ position: absolute;
+  margin-top: -140px;
+  width: 200px;
+  margin-left: 220px;
+}
+
+#b{
+ position: absolute;
+
+  width: 200px;
+  margin-left: 220px;
+  margin-top:  -70px;
+}
+
+
+.row{
+  
+  width: 1000px;
+}
+.hhh{
+  scale: 150%;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+
+   <aside>
+<div class="abs">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Klienci
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+             zamowienia
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            wizerunek
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+    <hr>
+    
+</aside>  
+
+
+
+<main>
+    <div class=" navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="marcin">
+              <div class="marci">
+            <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </div>
+           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  witaj marcin
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        
+      </nav>
+    </div>
+   <h1>Klient</h1>
+   <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Disabled</a>
+    </li>
+  </ul>
+   <div class="whitebox">
+    <div class="row ">
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="City" aria-label="City">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="State" aria-label="State">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+      </div>
+    </div>
+    
+    <div class="row ">
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="City" aria-label="City">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="State" aria-label="State">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+      </div>
+    </div>
+      
+
+    <div class="row ">
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="City" aria-label="City">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="State" aria-label="State">
+      </div>
+
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+      </div>
+      <div class="col-sm">
+        <label>a</label>
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+      </div>
+    </div>
+    <div class="hhh">
+    <span class="badge text-bg-success">New</span>
+
+    <span class="badge text-bg-warning">Warning</span>
+
+  </div>
+
+    </div>
+</div>
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">kraj</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+   
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
